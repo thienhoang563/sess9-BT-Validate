@@ -7,7 +7,7 @@
 <body>
 <script>
     function validatePhone(str) {
-        var regexp = /^\W([0-9]{2}\W)-\W([0]+[0-9]{9}\W)$/;
+        var regexp = /^\W[0-9]{2}\W-\W[0]+[0-9]{9}\W$/;
         if (regexp.test(str)){
             return true
         }
