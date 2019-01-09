@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Phone Number</title>
+</head>
+<body>
+<script>
+    function validatePhone(str) {
+        var regexp = /^[0-9]{2}-[0]+[0-9]{9}$/;
+        if (regexp.test(str)){
+            return true
+        }
+        return false;
+    }
+    var a ='65-0987654321';
+    console.log(validatePhone(a));
+    var b ='43-7395729635';
+    console.log(validatePhone(b));
+    var c ='g4-0793672957';
+    console.log(validatePhone(c));
+    var d ='84-0775555555';
+    console.log(validatePhone(d));
+</script>
+</body>
+</html>
