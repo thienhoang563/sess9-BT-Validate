@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Class Name</title>
+</head>
+<body>
+<script>
+    function validateClassName(str) {
+        var regexp = /^(C|A|P)[0-9]{4}(G|H|I|K|L|M)$/;
+        if (regexp.test(str)){
+            return true
+        }
+        return false;
+    }
+
+    var a ='C2285K';
+    console.log(validateClassName(a));
+    var b ='c6892G';
+    console.log(validateClassName(b));
+    var c ='P561G';
+    console.log(validateClassName(c));
+    var d ='A1852B';
+    console.log(validateClassName(d));
+    var e ='.6892G';
+    console.log(validateClassName(e));
+</script>
+</body>
+</html>
